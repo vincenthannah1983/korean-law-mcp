@@ -121,3 +121,6 @@ app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}/mcp`);
   console.log("---------------------------------------");
 });
+app.get("/mcp", (req, res) => {
+  res.send("Korean Law MCP endpoint is ready.");
+});
